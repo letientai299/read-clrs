@@ -14,13 +14,16 @@
 
 - [X] 1.1 Algorithms
   - tool for solving well-specified computational problem
-- [ ] 1.2 Algorithms as a technology
+- [X] 1.2 Algorithms as a technology
   - They asks for the other criteria for selecting the "best" algorithms in ex
     1.1-2, before diving into this question in 1.2
   - When I think about algorithms Efficiency, I'd actually never thought about
     the contant `c` as in `c.n^2`. Put it into consideration, with `n` small
     enough, we can see that Insertion sort can be better than Merge sort for
     some cases.
+  - Among 5 languages I'm trying to implement the algorithms, Haskell is the
+    hardest, possibly because it's a completely different paradigm. I've to read
+    http://learnyouahaskell.com/ to work with it.
 
 == 2 Getting Started ==
 

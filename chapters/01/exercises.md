@@ -4,10 +4,10 @@
 1.1-1
 -----
 
-Q: Give a real-world example that requires sorting or a real-world example that re-
+**Q**: Give a real-world example that requires sorting or a real-world example that re-
 quires computing a convex hull.
 
-A: Sorting is required when we have to turn order the items unordered in a set. For
+**A**: Sorting is required when we have to turn order the items unordered in a set. For
 example, when we have to process a list of todo tasks in order of their
 important, we must sort the tasks based on their level of important.
 
@@ -17,10 +17,10 @@ convex hull.
 1.1-2
 -----
 
-Q: Other than speed, what other means of efficiency might one use in a
+**Q**: Other than speed, what other means of efficiency might one use in a
 real-world setting?
 
-A: Something come to mind:
+**A**: Something come to mind:
 
 - **Level of correctness**, applicable for NP-complete problems, which is known
   to have no efficient algorithm. We can only solve those problems
@@ -39,10 +39,10 @@ A: Something come to mind:
 1.1-3
 -----
 
-Q: Select a data structure that you have seen previously, and discuss its
+**Q**: Select a data structure that you have seen previously, and discuss its
 strengths and limitations
 
-A: I'll try my best with **single liked list**.
+**A**: I'll try my best with **single liked list**.
 
 ### Strengths
 
@@ -65,10 +65,10 @@ A: I'll try my best with **single liked list**.
 1.1-4
 -----
 
-Q: How are the shortest-path and traveling-salesman problems given above similar?
+**Q**: How are the shortest-path and traveling-salesman problems given above similar?
 How are they different?
 
-A:
+**A**:
 
 It's hard to pretend that I don't know the concept of the graph, thus, I'll use
 it during answer this question.
@@ -91,11 +91,11 @@ it during answer this question.
 1.1-5
 -----
 
-Q: Come up with a real-world problem in which only the best solution will do.
+**Q**: Come up with a real-world problem in which only the best solution will do.
 Then come up with one in which a solution that is "approximately" the best is
 good enough.
 
-A: Real world problem in which only the best solution will do.
+**A**: Real world problem in which only the best solution will do.
 
 - Sort students in a class based on their scores
 - Look up a text or pattern in a document
@@ -112,5 +112,40 @@ good enough.
   is a very hard problem. Thus, "approximately" is appreciated.
 
 1.2
----
+===
 
+1.2-1
+-----
+
+**Q**: Give an example of an application that requires algorithmic content at
+the application level, and discuss the function of the algorithms involved.
+
+**A**: Building search and replace feature for an editor requires string
+matching algorithms. The algorithm is need to quickly identify the pattern
+across the file, or even the whole directory. The naive solution -
+single thread, compare character one by one - is very slow on big file and
+many files. Also, for unicode, a "character" might not be easy to defined. Thus,
+that solution might not work correctly. We need to employ better algorithms.
+
+1.2-2
+-----
+
+
+**Q**: Suppose we are comparing implementations of insertion sort and merge sort on the
+same machine. For inputs of size `n`, insertion sort runs in `8n^2` steps, while
+merge sort runs in `64n.lg(n)` steps. For which values of `n` does insertion sort
+beat merge sort?
+
+**A**: Basically, we need to find greatest `n` such that `8n <= 64lg(n)`, which
+in turn mean `n < 8 lg(n)>`, and as `lg` in this cases stand for `log_2(n)`, we
+will have `n <  44` (check the scripts)
+
+1.2-3
+-----
+
+**Q**: What is the smallest value of `n` such that an algorithm whose running time is
+`100n^2` run faster than an algorithm whose running time is `2^n` on the same
+machine?
+
+**A**: The smallest value of `n` is 15. I only wrote python version, as there's
+no point to repeat the same while loop in other languages.
