@@ -1,12 +1,26 @@
+= Other note =
+
+- This is not the first time I attempt to read this book, but hopefully this is
+  the last time.
+- I'll to read this book every day until I finish it. Check the git log.
+
+--------------------------------------------------------------------------------
+
 = Preface =
 
 = I Foundations =
 
 == 1 The Role of Algorithms in Computing ==
 
-- [ ] 1.1 Algorithms
+- [X] 1.1 Algorithms
   - tool for solving well-specified computational problem
 - [ ] 1.2 Algorithms as a technology
+  - They asks for the other criteria for selecting the "best" algorithms in ex
+    1.1-2, before diving into this question in 1.2
+  - When I think about algorithms Efficiency, I'd actually never thought about
+    the contant `c` as in `c.n^2`. Put it into consideration, with `n` small
+    enough, we can see that Insertion sort can be better than Merge sort for
+    some cases.
 
 == 2 Getting Started ==
 
