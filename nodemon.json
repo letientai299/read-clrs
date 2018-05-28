@@ -4,6 +4,7 @@
     "rb": "ruby",
     "py": "python3",
     "js": "node",
-    "hs": "runhaskell"
+    "hs": "runhaskell",
+    "rs": "cargo script"
   }
 }
